@@ -22,7 +22,8 @@ the last save state.
 - Put Epilogue Playback in the top left corner of your screen (be sure the game is at least half visible,
 so that the screen capture app can spot the shiny)
 
-- Save in front of desired hunt
+- Save in front of desired hunt (For soft resets be sure to only have 1 pokemon in your party, as it will
+always check your second pokemon for shinines)
 
 - Change speed up setting in Playback to 5x
 
@@ -39,7 +40,7 @@ this will allow you to verify whether the shiny detection program works as inten
 - Using high intensity programs alongside Shiny Loops may not work as smoothly as intended
 because of epilogues lag
 
--If a loop would not go as intended because of the lag of the emulator, there is no need to worry,
+- If a loop would not go as intended because of the lag of the emulator, there is no need to worry,
 since the loop will fix itself on the next iteration or two.
 
 ## Proof of work
