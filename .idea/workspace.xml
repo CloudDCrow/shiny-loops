@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af4de0d1-2a77-4417-8c49-330a08fc62bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/shiny_loops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/button_presser.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/button_presser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/custom_loops.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/custom_loops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/get_target_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/get_target_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/gui_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/gui_elements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/shiny_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/shiny_detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiny_loops.py" beforeDir="false" afterPath="$PROJECT_DIR$/shiny_loops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_shiny_loops.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +95,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_shiny_loops.TestShinyLoops.test_on_close" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_shiny_loops.TestShinyLoops.test_on_close&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in test_shiny_loops.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,6 +127,7 @@
       <list>
         <item itemvalue="Python.shiny_loops" />
         <item itemvalue="Python tests.Python tests in test_shiny_loops.py" />
+        <item itemvalue="Python tests.Python tests for test_shiny_loops.TestShinyLoops.test_on_close" />
         <item itemvalue="Python tests.Python tests for test_shiny_loops.TestAutoLoopStart.test_start_eevee_loop" />
         <item itemvalue="Python tests.Python tests for test_shiny_loops.TestAutoLoopStart" />
       </list>

@@ -1,6 +1,5 @@
 import tkinter as tk
-
-ICON_PATH = "imgs/icon.ico"
+from config import config
 
 
 def create_window(application):
@@ -8,9 +7,9 @@ def create_window(application):
     app = application(root)
 
     root.protocol("WM_DELETE_WINDOW", app.on_close)
-    root.iconbitmap(default=ICON_PATH)
+    root.iconbitmap(default=config.ICON_PATH)
     root.configure(bg="#333333")
-    root.geometry("500x300")
-    root.minsize(500, 200)
+    root.geometry(config.APP_SIZE)
+    root.resizable(False, False)
 
     root.mainloop()

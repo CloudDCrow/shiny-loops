@@ -1,10 +1,6 @@
 import time
 from PIL import ImageGrab
-
-SHINY_FRAME_COLOR = (107, 227, 231)
-HP_BAR = (255, 251, 222)
-SQUARE_POSITION = (0, 0)
-SQUARE_SIZE = (500, 500)
+from config import config
 
 
 def shiny_frame_detection(self):
@@ -12,12 +8,12 @@ def shiny_frame_detection(self):
     time.sleep(0.5)
     screenshot = ImageGrab.grab()
 
-    left, top = SQUARE_POSITION
-    right, bottom = left + SQUARE_SIZE[0], top + SQUARE_SIZE[1]
+    left, top = config.SQUARE_POSITION
+    right, bottom = left + config.SQUARE_SIZE[0], top + config.SQUARE_SIZE[1]
     square = screenshot.crop((left, top, right, bottom))
 
     # Return True if frame is shiny
-    if any(pixel == SHINY_FRAME_COLOR for pixel in square.getdata()):
+    if any(pixel == config.SHINY_FRAME_COLOR for pixel in square.getdata()):
         print("WOOHOO! It's a shiny!")
         self.stop_auto_loop()
 
@@ -31,24 +27,24 @@ def shiny_check(self):
 
 def wild_detection():
     # Screenshots the top left side of the screen
-    time.sleep(0.1)
+    time.sleep(0.01)
     screenshot = ImageGrab.grab()
 
-    left, top = SQUARE_POSITION
-    right, bottom = left + SQUARE_SIZE[0], top + SQUARE_SIZE[1]
+    left, top = config.SQUARE_POSITION
+    right, bottom = left + config.SQUARE_SIZE[0], top + config.SQUARE_SIZE[1]
     square = screenshot.crop((left, top, right, bottom))
 
     # Return True if frame is shiny
-    return any(pixel == HP_BAR for pixel in square.getdata())
+    return any(pixel == config.HP_BAR for pixel in square.getdata())
 
 
 def wild_shiny_detection(self, encounters):
     # Screenshots the top left side of the screen
-    time.sleep(0.5)
+    time.sleep(0.01)
     screenshot = ImageGrab.grab()
 
-    left, top = SQUARE_POSITION
-    right, bottom = left + SQUARE_SIZE[0], top + SQUARE_SIZE[1]
+    left, top = config.SQUARE_POSITION
+    right, bottom = left + config.SQUARE_SIZE[0], top + config.SQUARE_SIZE[1]
     square = screenshot.crop((left, top, right, bottom))
 
     # Return True if frame is shiny

@@ -1,9 +1,5 @@
 from modules import button_presser
-
-RAT = (173, 154, 90)
-BIRD = (231, 219, 0)
-
-ROUTE1 = [RAT, BIRD]
+from config import config
 
 
 def shiny_test(self, target_window):
@@ -13,7 +9,15 @@ def shiny_test(self, target_window):
 
 
 def route1_loop(self, target_window):
-    button_presser.wild_loop_combination(self, target_window, ROUTE1)
+    button_presser.wild_loop_combination_side(self, target_window, config.ROUTE1)
+
+
+def route22_loop(self, target_window):
+    button_presser.wild_loop_combination_side(self, target_window, config.ROUTE22)
+
+
+def route8_loop(self, target_window):
+    button_presser.wild_loop_combination_vert(self, target_window, config.ROUTE8)
 
 
 def starter_loop(self, target_window):

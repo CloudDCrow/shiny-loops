@@ -37,14 +37,15 @@ this will allow you to verify whether the shiny detection program works as inten
 
 
 - Using high intensity programs alongside Shiny Loops may not work as smoothly as intended
-because of epilogues lag
+because of epilogue lag
 
 
 ## Proof of work
 Pictures taken from a couple successful hunts during the creation and testing of the program
 
-![Shiny Eevee](imgs/shiny_eevee.png)
 ![Shiny Starter](imgs/shiny_starter.png)
+![Shiny Wild](imgs/shiny_wild.png)
+![Shiny Eevee](imgs/shiny_eevee.png)
 
 
 ## Interesting Stats
@@ -57,3 +58,6 @@ get using Shiny Loops on random encounters:
 
 Knowing that a shiny is ~ 1/8000, it means that leaving the bot on for a week would, on average
 find you 6 shinies (catching not included :P)
+
+## Contributing
+All contributions are welcome, even if just a feature recommendation or a small bug fix. 
