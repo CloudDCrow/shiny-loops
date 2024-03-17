@@ -22,8 +22,8 @@ the last save state.
 - Put Epilogue Playback in the top left corner of your screen (be sure the game is at least half visible,
 so that the screen capture app can spot the shiny)
 
-- Save in front of desired hunt (For soft resets be sure to only have 1 pokemon in your party, as it will
-always check your second pokemon for shinines)
+- Save in front of desired hunt (For soft resets be sure to only have 1 Pokémon in your party, as it will
+always check your second Pokémon for shininess)
 
 - Change speed up setting in Playback to 5x
 
