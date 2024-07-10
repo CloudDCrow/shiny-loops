@@ -27,7 +27,6 @@ def shiny_check(self):
 
 def wild_detection():
     # Screenshots the top left side of the screen
-    time.sleep(0.01)
     screenshot = ImageGrab.grab()
 
     left, top = config.SQUARE_POSITION
@@ -40,7 +39,6 @@ def wild_detection():
 
 def wild_shiny_detection(self, encounters):
     # Screenshots the top left side of the screen
-    time.sleep(0.01)
     screenshot = ImageGrab.grab()
 
     left, top = config.SQUARE_POSITION

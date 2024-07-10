@@ -6,15 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="af4de0d1-2a77-4417-8c49-330a08fc62bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/button_presser.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/button_presser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/custom_loops.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/custom_loops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/get_target_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/get_target_window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/gui_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/gui_elements.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/shiny_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/shiny_detector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shiny_loops.py" beforeDir="false" afterPath="$PROJECT_DIR$/shiny_loops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_shiny_loops.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
   </component>
   <component name="RunManager" selected="Python.shiny_loops">
     <configuration name="shiny_loops" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject" />
+      <module name="shiny-loops" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -58,7 +55,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Rok\Desktop\PS\Shiny-Loops\shiny_loops.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shiny_loops.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />

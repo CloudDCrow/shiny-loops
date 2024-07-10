@@ -1,9 +1,11 @@
 import time
 import win32con
 import win32gui
+
+from config import config
 from modules import shiny_detector
 
-WILD_ESCAPE_KEYS = ['z', 'z', 'z', 'right', 'down', 'x', 'z', 'z']
+WILD_ESCAPE_KEYS = ['z', 'z', 'z', 'z', 'z', 'z', 'z', 'right', 'down', 'x', 'z', 'z', 'z', 'z']
 RESTART_KEYS = ['return', 'backspace', 'x', 'z']
 
 virtual_key_code = {
@@ -27,19 +29,17 @@ def restart_game(target_handle):
 
 
 def skip_intro(self, target_handle):
-    for i in range(8):
+    for i in range(10):
         if not self.running:
             break
-        time.sleep(0.3)
-        win32gui.PostMessage(target_handle, win32con.WM_KEYDOWN, ord('X'), 0)
-        time.sleep(0.3)
-        win32gui.PostMessage(target_handle, win32con.WM_KEYUP, ord('X'), 0)
+        press_key(target_handle, "x", 0.2)
 
 
 def run_in_grass_side(self, target_handle):
     while True:
         if not self.running:
             break
+        press_key_down(target_handle, "z")
         press_key(target_handle, "left", 0.03)
         press_key(target_handle, "right", 0.03)
         if shiny_detector.wild_detection():
@@ -50,6 +50,7 @@ def run_in_grass_vert(self, target_handle):
     while True:
         if not self.running:
             break
+        press_key_down(target_handle, "z")
         press_key(target_handle, "up", 0.03)
         press_key(target_handle, "down", 0.03)
         if shiny_detector.wild_detection():
@@ -60,7 +61,7 @@ def escape_wild_battle(self, target_handle):
     for key in WILD_ESCAPE_KEYS:
         if not self.running:
             break
-        press_key(target_handle, key, 0.4)
+        press_key(target_handle, key, 0.2)
 
 
 def press_loop_combination(self, target_handle, loop_keys):
@@ -73,7 +74,7 @@ def press_loop_combination(self, target_handle, loop_keys):
         press_key_up(target_handle, key)
 
 
-def stationary_loop_combination(self, target_window, loop_keys):
+def gift_loop_combination(self, target_window, loop_keys):
     try:
         while self.running:
             target_handle = target_window._hWnd if target_window else None
@@ -88,14 +89,32 @@ def stationary_loop_combination(self, target_window, loop_keys):
         print("Loop interrupted.")
 
 
+def stationary_loop_combination(self, target_window, loop_keys, encounter):
+    try:
+        while self.running:
+            target_handle = target_window._hWnd if target_window else None
+            restart_game(target_handle)
+            skip_intro(self, target_handle)
+            press_loop_combination(self, target_handle, loop_keys)
+
+            time.sleep(0.1)
+            if shiny_detector.wild_shiny_detection(self, encounter):
+                break
+
+    except KeyboardInterrupt:
+        print("Loop interrupted.")
+
+
 def wild_loop_combination_side(self, target_window, encounters):
     try:
         while self.running:
             target_handle = target_window._hWnd if target_window else None
             run_in_grass_side(self, target_handle)
+
             if shiny_detector.wild_shiny_detection(self, encounters):
                 break
-            escape_wild_battle(self, target_handle)
+            else:
+                escape_wild_battle(self, target_handle)
 
     except KeyboardInterrupt:
         print("Loop interrupted.")
@@ -106,9 +125,11 @@ def wild_loop_combination_vert(self, target_window, encounters):
         while self.running:
             target_handle = target_window._hWnd if target_window else None
             run_in_grass_vert(self, target_handle)
+
             if shiny_detector.wild_shiny_detection(self, encounters):
                 break
-            escape_wild_battle(self, target_handle)
+            else:
+                escape_wild_battle(self, target_handle)
 
     except KeyboardInterrupt:
         print("Loop interrupted.")

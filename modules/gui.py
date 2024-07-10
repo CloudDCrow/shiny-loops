@@ -8,7 +8,7 @@ def create_window(application):
 
     root.protocol("WM_DELETE_WINDOW", app.on_close)
     root.iconbitmap(default=config.ICON_PATH)
-    root.configure(bg="#333333")
+    root.configure(bg="#111111")
     root.geometry(config.APP_SIZE)
     root.resizable(False, False)
 
