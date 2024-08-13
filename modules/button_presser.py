@@ -2,6 +2,7 @@ import time
 import win32con
 import win32gui
 
+
 from config import config
 from modules import shiny_detector
 

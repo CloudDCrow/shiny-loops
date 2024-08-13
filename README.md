@@ -17,6 +17,39 @@ and the shiny would be waiting in the morning.
 save state, so if the shiny was found before the crash, it would still be recoverable by loading
 the last save state.
 
+## Installation Guide
+
+### Prerequisites
+
+Before you begin, ensure you have the following:
+
+- **Python**: Ensure Python 3 is installed on your system (I am using 3.11). You can download it from the [official Python Website](https://www.python.org/downloads/).
+- **IDE**: IDE of your choice, I use PyCharm on Windows(For free version download Community Edition) [Pycharm Download](https://www.jetbrains.com/pycharm/download/?section=windows).
+- **Epilogue Playback**: This application is required for the proper functioning of this code. Download and install it from [Epilogue’s Official Site](https://www.epilogue.co/downloads).
+
+### Setting Up the Project
+
+#### 1. Download the Project
+
+- Click the green "Code" button.
+- Select "Download ZIP" and save the file to your computer.
+- Extract the ZIP file to a directory of your choice.
+
+### 2. Run the Project
+
+- Open your IDE and setup the environment
+- In the terminal of your IDE, run the following command:
+
+  ```bash
+  pip install -r requirements.txt
+
+- If there are issues with permision use this:
+
+  ```bash
+  pip install --user -r requirements.txt
+
+- Open Playback
+- Run shiny_loops.py and proceed with the "How to use" below
 
 ## How to use
 - Put Epilogue Playback in the top left corner of your screen (be sure the game is at least half visible,
