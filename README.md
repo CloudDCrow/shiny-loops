@@ -35,7 +35,7 @@ Before you begin, ensure you have the following:
 - Select "Download ZIP" and save the file to your computer.
 - Extract the ZIP file to a directory of your choice.
 
-### 2. Run the Project
+### 2.1 Run the Project
 
 - Open your IDE and setup the environment
 - In the terminal of your IDE, run the following command:
@@ -43,11 +43,23 @@ Before you begin, ensure you have the following:
   ```bash
   pip install -r requirements.txt
 
+#### 2.2 Common errors
+
 - If there are issues with permision use this:
 
   ```bash
   pip install --user -r requirements.txt
 
+- If you get the following error:
+
+  ```bash
+   ImportError: No module named win32con
+  
+- Use this commad
+
+  ```bash
+  pip install pypiwin32
+  
 - Open Playback
 - Run shiny_loops.py and proceed with the "How to use" below
 
