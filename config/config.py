@@ -10,7 +10,7 @@ SQUARE_POSITION = (0, 0)
 SQUARE_SIZE = (600, 500)
 
 # RBG color of the light blue boarder around the summary of a shiny
-SHINY_FRAME_COLOR = (107, 227, 231)
+SHINY_FRAME_COLOR = (107, 227, 230)
 
 # RGB Color of the wild Pokémon HP bar
 HP_BAR = (255, 251, 222)

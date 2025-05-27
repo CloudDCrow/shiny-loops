@@ -16,11 +16,6 @@ def shiny_frame_detection(self):
     if any(pixel == config.SHINY_FRAME_COLOR for pixel in square.getdata()):
         print("WOOHOO! It's a shiny!")
         self.stop_auto_loop()
-
-
-def shiny_check(self):
-    if shiny_frame_detection(self):
-        print("Shiny detected!")
     else:
         print("No shiny detected")
 

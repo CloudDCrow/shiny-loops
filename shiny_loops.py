@@ -78,7 +78,7 @@ class ShinyLoops:
 
         # Shiny testing buttons
         self.shiny_check_button = gui_elements.create_button(shiny_check_frame, "Shiny Check",
-                                                             lambda: shiny_detector.shiny_check(self))
+                                                             lambda: shiny_detector.shiny_frame_detection(self))
         self.shiny_test_button = gui_elements.create_button(shiny_check_frame, "Shiny Test",
                                                             lambda: self.start_auto_loop('test'))
 
