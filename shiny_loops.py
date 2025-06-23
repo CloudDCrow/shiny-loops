@@ -63,8 +63,8 @@ class ShinyLoops:
         # Stationary buttons
         self.start_eevee_button = gui_elements.create_button(stationary_button_frame1, "Start Eevee",
                                                              lambda: self.start_auto_loop('eevee'))
-        self.start_aero_button = gui_elements.create_button(stationary_button_frame1, "Start Fossil",
-                                                            lambda: self.start_auto_loop('aero'))
+        self.start_fossil_button = gui_elements.create_button(stationary_button_frame1, "Start Fossil",
+                                                            lambda: self.start_auto_loop('fossil'))
         self.start_starter_button = gui_elements.create_button(stationary_button_frame1, "Start Starter",
                                                                lambda: self.start_auto_loop('starter'))
         self.start_snorlax_button = gui_elements.create_button(stationary_button_frame2, "Start Snorlax",
@@ -87,7 +87,7 @@ class ShinyLoops:
             if not self.running:
                 self.running = True
                 self.start_eevee_button.config(state=tk.DISABLED)
-                self.start_aero_button.config(state=tk.DISABLED)
+                self.start_fossil_button.config(state=tk.DISABLED)
                 self.start_starter_button.config(state=tk.DISABLED)
                 self.start_snorlax_button.config(state=tk.DISABLED)
                 self.start_legends_button.config(state=tk.DISABLED)
@@ -109,8 +109,8 @@ class ShinyLoops:
                     self.loop_thread = Thread(target=custom_loops.viridian_forest_loop, args=(self, self.target_window))
                 elif loop == 'eevee':
                     self.loop_thread = Thread(target=custom_loops.eevee_loop, args=(self, self.target_window))
-                elif loop == 'aero':
-                    self.loop_thread = Thread(target=custom_loops.aero_loop, args=(self, self.target_window))
+                elif loop == 'fossil':
+                    self.loop_thread = Thread(target=custom_loops.fossil_loop, args=(self, self.target_window))
                 elif loop == 'starter':
                     self.loop_thread = Thread(target=custom_loops.starter_loop, args=(self, self.target_window))
                 elif loop == 'snorlax':
@@ -134,7 +134,7 @@ class ShinyLoops:
                 self.start_route8_button.config(state=tk.NORMAL)
                 self.start_viridian_forest_button.config(state=tk.NORMAL)
                 self.start_eevee_button.config(state=tk.NORMAL)
-                self.start_aero_button.config(state=tk.NORMAL)
+                self.start_fossil_button.config(state=tk.NORMAL)
                 self.start_starter_button.config(state=tk.NORMAL)
                 self.start_snorlax_button.config(state=tk.NORMAL)
                 self.start_legends_button.config(state=tk.NORMAL)

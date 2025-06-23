@@ -31,13 +31,13 @@ def snorlax_loop(self, target_window):
 
 
 def legends_loop(self, target_window):
-    loop_keys = ['z', 'x', 'x', 'x', 'x', 'x']
+    loop_keys = ['z', 'x', 'x', 'x', 'x']
 
     button_presser.stationary_loop_combination(self, target_window, loop_keys, config.LEGENDS)
 
 
 def starter_loop(self, target_window):
-    loop_keys = ['z', 'x', 'x', 'x', 'x', 'x', 'z', 'x', 'x', 'x', 'return', 'x', 'x', 'x']
+    loop_keys = ['z', 'x', 'x', 'x', 'x', 'z', 'z', 'z', 'return', 'x', 'x', 'x']
 
     button_presser.gift_loop_combination(self, target_window, loop_keys)
 
@@ -49,6 +49,6 @@ def eevee_loop(self, target_window):
 
 
 def fossil_loop(self, target_window):
-    loop_keys = ['z', 'x', 'x', 'z', 'z', 'return', 'down', 'x', 'down', 'x', 'x']
+    loop_keys = ['z', 'x', 'x', 'x', 'z', 'z', 'return', 'down', 'x', 'down', 'x', 'x']
 
     button_presser.gift_loop_combination(self, target_window, loop_keys)

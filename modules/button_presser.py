@@ -71,8 +71,12 @@ def press_loop_combination(self, target_handle, loop_keys):
             break
         time.sleep(0.5)
         press_key_down(target_handle, key)
-        time.sleep(0.5)
-        press_key_up(target_handle, key)
+        if key == 'down':
+            time.sleep(0.01)
+            press_key_up(target_handle, key)
+        else:
+            time.sleep(0.5)
+            press_key_up(target_handle, key)
 
 
 def gift_loop_combination(self, target_window, loop_keys):
